@@ -1,5 +1,6 @@
 import cv2
 import os
+from tqdm import tqdm  # 新增
 
 # 设置参数
 image_folder = '\Pull'  # 图片文件夹路径
@@ -17,8 +18,8 @@ images.sort()  # 可根据需要自定义排序规则
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 out = cv2.VideoWriter(output_video, fourcc, fps, frame_size)
 
-# 逐张图片写入视频
-for image_name in images:
+# 逐张图片写入视频，添加进度条
+for image_name in tqdm(images, desc="生成视频帧"):
     img_path = os.path.join(image_folder, image_name)
     img = cv2.imread(img_path)
     if img is None:
