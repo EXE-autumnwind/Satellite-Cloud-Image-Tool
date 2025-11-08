@@ -2,6 +2,9 @@
 - 如果你没有任何基础，可通过“依赖安装.bat”自动安装环境，记得自行配置文件储存地址，默认为/Pull
 - MakeVideo.py可以帮你快速把文件夹中的所有图片集合成一个视频
 
+# 下载
+- 点击code->download zip
+
 # 生成物
 - [示例视频](https://builddreams.cn/output.mp4)
 
