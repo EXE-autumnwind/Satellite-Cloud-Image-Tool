@@ -11,7 +11,7 @@ from tqdm import tqdm
 SAVE_MODE = 1 #1.程序根目录 2.指定目录
 MANUAL_SAVE_PATH = "D:\\气象云图" #自定义保存路径，，上面SAVE_MODE记得改2
 MAX_THREADS = 10 #最大线程数
-INDEX_URL = "http://img.nsmc.org.cn/CLOUDIMAGE/FY4B/AGRI/GCLR/SEC/xml/FY4B-china-72h.xml"
+INDEX_URL = "http://img.nsmc.org.cn/CLOUDIMAGE/FY4B/AGRI/GCLR/SEC/xml/FY4B-china-72h.xml" #XML地址填写位置
 
 if SAVE_MODE == 1:
     BASE_SAVE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "images")
